@@ -5,8 +5,6 @@ import { Router, Route, Redirect, IndexRoute, browserHistory  } from 'react-rout
 import { createHistory, useBasename } from 'history'
 import ga from 'react-ga'
 
-import './sass/main.scss'
-
 import Main from './views/Main'
 
 import Ttt from './views/ttt/Ttt'
@@ -101,7 +99,7 @@ app.extend({
 				break
 
 			default:
-				console.log('show_page event with:', u) 
+				console.log('show_page event with:', u)
 				browserHistory.push(u)
 				break
 		}

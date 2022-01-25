@@ -34,13 +34,6 @@ module.exports = {
 				loader: 'file?name=[path][name].[ext]'
 			},
 			{
-				test: /\.scss$/,
-				loader: ExtractTextPlugin.extract(
-					'style',
-					'css!sass'
-				)
-			},
-			{
 				test: /\.jsx?/,
 				loaders: ['babel'],
 				include: path.join(__dirname, 'src')
